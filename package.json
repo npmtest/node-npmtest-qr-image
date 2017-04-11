@@ -1,1 +1,40 @@
-{     "devDependencies": {         "qr-image": "*",         "electron-lite": "kaizhu256/node-electron-lite#alpha",         "utility2": "kaizhu256/node-utility2#alpha"     },     "name":"npmtest-qr-image",     "homepage": "https://github.com/npmtest/node-npmtest-qr-image",     "repository": {         "type": "git",         "url": "https://github.com/npmtest/node-npmtest-qr-image.git"     },     "scripts": {         "build-ci": "utility2 shReadmeTest build_ci.sh"     },     "version": "0.0.1" }
+{
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "description": "test coverage for [qr-image (v3.2.0)](https://github.com/alexeyten/qr-image) [![npm package](https://img.shields.io/npm/v/npmtest-qr-image.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-qr-image) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-qr-image.svg)](https://travis-ci.org/npmtest/node-npmtest-qr-image)",
+    "devDependencies": {
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "qr-image": "*",
+        "utility2": "kaizhu256/node-utility2#alpha"
+    },
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmtest/node-npmtest-qr-image",
+    "keywords": [
+        "coverage",
+        "test",
+        "qr-image"
+    ],
+    "license": "MIT",
+    "main": "lib.npmtest_qr_image.js",
+    "name": "npmtest-qr-image",
+    "nameAlias": "npmtest_qr_image",
+    "nameOriginal": "npmtest-qr-image",
+    "os": [
+        "darwin",
+        "linux"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npmtest/node-npmtest-qr-image.git"
+    },
+    "scripts": {
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "(set -e; npm install \"kaizhu256/node-utility2#alpha\"; utility2 shDeployHeroku)",
+        "postinstall": "if [ -f npm_scripts.sh ]; then ./npm_scripts.sh postinstall; fi",
+        "start": "(set -e; export PORT=${PORT:-8080}; utility2 start test.js)",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
+    },
+    "version": "0.0.1"
+}
