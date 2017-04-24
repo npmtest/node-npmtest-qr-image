@@ -1,4 +1,7 @@
-# test coverage for  [qr-image (v3.2.0)](https://github.com/alexeyten/qr-image)  [![npm package](https://img.shields.io/npm/v/npmtest-qr-image.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-qr-image) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-qr-image.svg)](https://travis-ci.org/npmtest/node-npmtest-qr-image)
+# npmtest-qr-image
+
+#### basic test coverage for  [qr-image (v3.2.0)](https://github.com/alexeyten/qr-image)  [![npm package](https://img.shields.io/npm/v/npmtest-qr-image.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-qr-image) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-qr-image.svg)](https://travis-ci.org/npmtest/node-npmtest-qr-image)
+
 #### QR Code generator (png, svg, pdf, eps)
 
 [![NPM](https://nodei.co/npm/qr-image.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/qr-image)
@@ -7,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-qr-image/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-qr-image/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-qr-image/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-qr-image/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-qr-image/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-qr-image/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-qr-image/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-qr-image/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-qr-image/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-qr-image/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-qr-image/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-qr-image/build/coverage.html/index.html)
 
@@ -77,7 +80,8 @@
     "scripts": {
         "test": "./tests/test.js"
     },
-    "version": "3.2.0"
+    "version": "3.2.0",
+    "bin": {}
 }
 ```
 
